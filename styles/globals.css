@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Styles */
+h1 {
+  @apply text-2xl font-bold text-gray-800 mb-6;
+}
+
+.container {
+  @apply flex justify-center items-center w-full h-screen bg-gray-100 px-4;
+}
+
+.content {
+  @apply bg-white p-6 rounded-lg shadow-lg max-w-lg w-full;
+}
+
+form {
+  @apply flex flex-col;
+}
+
+.input {
+  @apply p-3 mb-4 border border-gray-300 rounded-md text-lg focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.btn {
+  @apply p-3 bg-blue-500 text-white rounded-md text-lg cursor-pointer hover:bg-blue-700 transition duration-300;
+}
+
+.message {
+  @apply mt-6 text-center text-lg text-gray-800;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    @apply text-xl;
+  }
+  
+  .input {
+    @apply p-2 text-base;
+  }
+  
+  .btn {
+    @apply text-base;
+  }
+}
